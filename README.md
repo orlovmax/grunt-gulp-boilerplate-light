@@ -103,8 +103,6 @@ Template with cms adjusted structure, based on [front-end-scaffold](https://gith
 		│   └── screen.styl
 		|
 		├── helpers/                           * additional resources
-		|	├── index.html
-		|	├── index_bg.jpg
 		|	├── favicon.ico
 		|	└── .htaccess
 		|
