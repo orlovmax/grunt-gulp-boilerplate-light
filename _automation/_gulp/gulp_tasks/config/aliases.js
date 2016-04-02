@@ -6,7 +6,7 @@ var gulp = require('gulp'),
 gulp.task('start', function() {
 	runSequence(
 		'shell:bower',
-		'bower',
+		'bower:main',
 		'clean:gitkeep'
 	);
 });
@@ -14,13 +14,13 @@ gulp.task('start', function() {
 // Dev task with static server
 gulp.task('dev', function() {
 	runSequence(
-		'coffee',
-		'rigger',
-		'sass',
-		'stylus',
-		'autoprefixer',
-		'cmq',
-		'jade',
+		'coffee:main',
+		'rigger:main',
+		'sass:main',
+		'stylus:main',
+		'autoprefixer:main',
+		'cmq:main',
+		'jade:main',
 		'sync:helpers',
 		'browserSync:server',
 		'watch'
@@ -30,10 +30,10 @@ gulp.task('dev', function() {
 // Build task
 gulp.task('build', function() {
 	runSequence(
-		'imagemin',
-		'csscomb',
-		'uglify',
-		'csso',
+		'imagemin:main',
+		'csscomb:main',
+		'uglify:main',
+		'csso:main',
 		'browserSync:server'
 	);
 });
@@ -41,18 +41,18 @@ gulp.task('build', function() {
 // Regenerate and build project by running all tasks
 gulp.task('rebuild', function() {
 	runSequence(
-		'coffee',
-		'rigger',
-		'sass',
-		'stylus',
-		'autoprefixer',
-		'cmq',
-		'jade',
+		'coffee:main',
+		'rigger:main',
+		'sass:main',
+		'stylus:main',
+		'autoprefixer:main',
+		'cmq:main',
+		'jade:main',
 		'sync:helpers',
-		'imagemin',
-		'csscomb',
-		'uglify',
-		'csso'
+		'imagemin:main',
+		'csscomb:main',
+		'uglify:main',
+		'csso:main'
 	);
 });
 

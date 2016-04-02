@@ -5,8 +5,8 @@ module.exports = {
 			'<%= paths.theme.coffee %>/*.coffee'
 		],
 		tasks: [
-			'newer:coffee',
-			'rigger'
+			'newer:main:coffee',
+			'rigger:main'
 		],
 		options: {
 			spawn: false
@@ -18,7 +18,7 @@ module.exports = {
 			'<%= paths.theme.js %>/lib/*.js'
 		],
 		tasks: [
-			'rigger'
+			'rigger:main'
 		],
 		options: {
 			spawn: false
@@ -29,9 +29,9 @@ module.exports = {
 			'<%= paths.theme.sass %>/*.{sass,scss}'
 		],
 		tasks: [
-			'newer:sass',
-			'autoprefixer',
-        	'cmq'
+			'newer:sass:main',
+			'autoprefixer:main',
+        	'cmq:main'
 		],
 		options: {
 			spawn: false
@@ -42,9 +42,9 @@ module.exports = {
 			'<%= paths.theme.stylus %>/*.styl'
 		],
 		tasks: [
-			'newer:stylus',
-			'autoprefixer',
-        	'cmq'
+			'newer:stylus:main',
+			'autoprefixer:main',
+        	'cmq:main'
 		],
 		options: {
 			spawn: false
@@ -55,8 +55,8 @@ module.exports = {
 			'<%= paths.theme.data %>/*.*'
 		],
 		tasks: [
-			'async_jade_data',
-			'jade'
+			'async_jade_data:main',
+			'jade:main'
 		],
 		options: {
 			spawn: false
@@ -67,7 +67,7 @@ module.exports = {
 			'<%= paths.theme.jade %>/*.jade'
 		],
 		tasks: [
-			'newer:jade'
+			'newer:jade:main'
 		],
 		options: {
 			spawn: false

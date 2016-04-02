@@ -7,7 +7,7 @@ var gulp = require('gulp'),
 
 
 // Concatenate & Minify JS
-gulp.task('rigger', function() {
+gulp.task('rigger:main', function() {
 	return gulp.src([
 		paths.theme.js + '/*.js',
 		'!' + paths.theme.js + '/*.min.js'

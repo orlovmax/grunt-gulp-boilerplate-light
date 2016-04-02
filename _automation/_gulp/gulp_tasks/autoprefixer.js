@@ -7,7 +7,7 @@ var gulp = require('gulp'),
 
 
 //Autoprefixer
-gulp.task('autoprefixer', function () {
+gulp.task('autoprefixer:main', function () {
 	return gulp.src(paths.theme.css + '/*.min.css')
 		.pipe(plumber())
 		.pipe(autoprefixer({

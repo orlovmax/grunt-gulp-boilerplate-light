@@ -10,8 +10,8 @@ gulp.task('watch', function() {
 		paths.theme.coffee + '/*.coffee',
 		function() {
 			runSequence(
-				'coffee:changed',
-				'rigger',
+				'coffee:main:changed',
+				'rigger:main',
 				'browserSync:reload'
 			);
 		}
@@ -25,7 +25,7 @@ gulp.task('watch', function() {
 		],
 		function() {
 			runSequence(
-			'rigger',
+			'rigger:main',
 			'browserSync:reload'
 			);
 		}
@@ -35,9 +35,9 @@ gulp.task('watch', function() {
 		paths.theme.sass + '/*.{sass,scss}',
 		function() {
 			runSequence(
-			'sass:changed',
-			'autoprefixer',
-			'cmq',
+			'sass:main:changed',
+			'autoprefixer:main',
+			'cmq:main',
 			'browserSync:reload'
 			);
 		}
@@ -47,9 +47,9 @@ gulp.task('watch', function() {
 		paths.theme.stylus + '/*.styl',
 		function() {
 			runSequence(
-			'stylus:changed',
-			'autoprefixer',
-			'cmq',
+			'stylus:main:changed',
+			'autoprefixer:main',
+			'cmq:main',
 			'browserSync:reload'
 			);
 		}
@@ -59,7 +59,7 @@ gulp.task('watch', function() {
 		paths.theme.data + '/*.*',
 		function() {
 			runSequence(
-			'jade',
+			'jade:main',
 			'browserSync:reload'
 			);
 		}
@@ -69,7 +69,7 @@ gulp.task('watch', function() {
 		paths.theme.jade + '/*.jade',
 		function() {
 			runSequence(
-			'jade:changed',
+			'jade:main:changed',
 			'browserSync:reload'
 			);
 		}

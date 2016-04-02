@@ -7,7 +7,7 @@ var gulp = require('gulp'),
 
 
 //Minify *.css files
-gulp.task('csso', function () {
+gulp.task('csso:main', function () {
 	return gulp.src(paths.theme.css + '/*.min.css')
 		.pipe(plumber())
 		.pipe(csso({

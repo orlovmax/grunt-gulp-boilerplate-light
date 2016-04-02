@@ -6,7 +6,7 @@ var gulp = require('gulp'),
 
 
 // Minify image files
-gulp.task('sprite', function () {
+gulp.task('sprite:main', function () {
 	return gulp.src([
 		paths.theme.images + '/sprite/*.png',
 		'!' + paths.theme.images + '/sprite/sprite.png'
