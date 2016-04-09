@@ -10,7 +10,7 @@ var gulp = require('gulp'),
 
 //Compile *.jade files
 gulp.task('jade:main', function() {
-	return gulp.src(paths.theme.jade + '/*.jade')
+	return gulp.src(paths.theme.jade + '/pages/*.jade')
 		.pipe(plumber())
 		.pipe(data(function(file) {
 			return { 'config': JSON.parse(fs.readFileSync(paths.theme.data + '/config.json'))}
@@ -26,7 +26,7 @@ gulp.task('jade:main', function() {
 
 //Compile *.jade files within watch task
 gulp.task('jade:main:changed', function() {
-	return gulp.src(paths.theme.jade + '/*.jade')
+	return gulp.src(paths.theme.jade + '/pages/*.jade')
 		.pipe(plumber())
 		.pipe(changed(paths.theme.html, {extension: '.html'}))
 		.pipe(data(function(file) {

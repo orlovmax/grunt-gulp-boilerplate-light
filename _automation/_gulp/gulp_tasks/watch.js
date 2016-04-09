@@ -66,7 +66,7 @@ gulp.task('watch', function() {
 	);
 
 	gulp.watch(
-		paths.theme.jade + '/*.jade',
+		paths.theme.jade + '/pages/*.jade',
 		function() {
 			runSequence(
 			'jade:main:changed',

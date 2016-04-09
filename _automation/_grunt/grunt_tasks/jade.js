@@ -6,7 +6,7 @@ module.exports = {
 			pretty: true
 		},
 		files: [ {
-			cwd: '<%= paths.theme.jade %>',
+			cwd: '<%= paths.theme.jade %>/pages',
 			src: ['*.jade'],
 			dest: '<%= paths.theme.html %>',
 			expand: true,
