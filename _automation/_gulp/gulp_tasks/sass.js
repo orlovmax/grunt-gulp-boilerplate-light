@@ -7,17 +7,17 @@ var gulp = require('gulp'),
 
 //Compile *.scss files
 gulp.task('sass:main', function () {
-	return gulp.src(paths.theme.sass + '/*.{sass,scss}')
+	return gulp.src(paths.dev.sass + '/*.{sass,scss}')
 		.pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
 		.pipe(rename({suffix: '.min'}))
-		.pipe(gulp.dest(paths.theme.css));
+		.pipe(gulp.dest(paths.build.css));
 });
 
 //Compile *.scss files within watch task
 gulp.task('sass:main:changed', function () {
-	return gulp.src(paths.theme.sass + '/*.{sass,scss}')
-		.pipe(changed(paths.theme.css, {extension: '.min.css'}))
+	return gulp.src(paths.dev.sass + '/*.{sass,scss}')
+		.pipe(changed(paths.build.css, {extension: '.min.css'}))
 		.pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
 		.pipe(rename({suffix: '.min'}))
-		.pipe(gulp.dest(paths.theme.css));
+		.pipe(gulp.dest(paths.build.css));
 });

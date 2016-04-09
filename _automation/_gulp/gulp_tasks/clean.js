@@ -6,6 +6,6 @@ var gulp = require('gulp'),
 
 
 gulp.task('clean:gitkeep', function() {
-	return gulp.src([paths.theme.main + '/**/.gitkeep'], { read: false })
+	return gulp.src([paths.dev.main + '/**/.gitkeep', paths.build.main + '/**/.gitkeep'], { read: false })
 		.pipe(vinylPaths(del));
 });

@@ -3,9 +3,9 @@ module.exports = {
 	helpers: {
 		files: [{
 			expand: true,
-			cwd: '<%= paths.theme.helpers %>',
-			src: ['**/*.*', '.htaccess'],
-			dest: '<%= paths.theme.main %>'
+			cwd: '<%= paths.dev.helpers %>',
+			src: ['*.*', '.htaccess'],
+			dest: '<%= paths.build.main %>'
 		}]
 	}
 }

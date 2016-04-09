@@ -7,9 +7,9 @@ module.exports = {
 		},
 		files: [{
 			expand: true,
-			cwd: '<%= paths.theme.stylus %>',
+			cwd: '<%= paths.dev.stylus %>',
 			src: [ '*.styl' ],
-			dest: '<%= paths.theme.css %>',
+			dest: '<%= paths.build.css %>',
 			ext: '.min.css'
 		}]
 	}

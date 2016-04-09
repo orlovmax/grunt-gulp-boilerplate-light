@@ -6,9 +6,9 @@ module.exports = {
 		},
 		files: [{
 			expand: true,
-			cwd: '<%= paths.theme.images %>',
+			cwd: '<%= paths.build.images %>',
 			src: ['**/*.*'],
-			dest: '<%= paths.theme.images %>'
+			dest: '<%= paths.build.images %>'
 		}]
 	}
 }

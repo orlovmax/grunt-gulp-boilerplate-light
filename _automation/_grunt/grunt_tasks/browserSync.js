@@ -3,23 +3,23 @@ module.exports = {
 	test:{
 		options: {
 			server: {
-				baseDir: '<%= paths.theme.main %>'
+				baseDir: '<%= paths.build.main %>'
 			}
 		}
 	},
 	dev:{
 		bsFiles: {
 			src: [
-				'<%= paths.theme.js %>/*.min.js',
-				'<%= paths.theme.css %>/*.min.css',
-				'<%= paths.theme.images %>/**/*.*',
-				'<%= paths.theme.html %>/*.html'
+				'<%= paths.build.js %>/*.min.js',
+				'<%= paths.build.css %>/*.min.css',
+				'<%= paths.build.images %>/**/*.*',
+				'<%= paths.build.html %>/*.html'
 			]
 		},
 		options: {
 			watchTask: true,
 			server: {
-				baseDir: '<%= paths.theme.main %>'
+				baseDir: '<%= paths.build.main %>'
 			}
 		}
 	}

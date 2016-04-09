@@ -24,5 +24,5 @@ gulp.task('bower:main', function() {
 		}
 	}))
 		.pipe(plumber())
-		.pipe(gulp.dest(paths.theme.js + '/vendor'));
+		.pipe(gulp.dest(paths.dev.js + '/vendor'));
 });

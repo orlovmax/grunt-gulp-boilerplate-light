@@ -7,9 +7,9 @@ module.exports = {
 		},
 		files: [{
 			expand: true,
-			cwd: '<%= paths.theme.sass %>',
+			cwd: '<%= paths.dev.sass %>',
 			src: [ '*.{sass,scss}' ],
-			dest: '<%= paths.theme.css %>',
+			dest: '<%= paths.build.css %>',
 			ext: '.min.css'
 		}]
 	}

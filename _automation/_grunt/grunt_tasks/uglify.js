@@ -6,9 +6,9 @@ module.exports = {
 	main: {
 		files:[{
 			expand: true,
-			cwd: '<%= paths.theme.js %>',
+			cwd: '<%= paths.build.js %>',
 			src: ['*.min.js'],
-			dest: '<%= paths.theme.js %>'
+			dest: '<%= paths.build.js %>'
 		}]
 	}
 }

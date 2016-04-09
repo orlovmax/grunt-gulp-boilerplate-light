@@ -2,10 +2,10 @@
 module.exports = {
 	coffee: {
 		files: [
-			'<%= paths.theme.coffee %>/*.coffee'
+			'<%= paths.dev.coffee %>/*.coffee'
 		],
 		tasks: [
-			'newer:main:coffee',
+			'newer:coffee:main',
 			'rigger:main'
 		],
 		options: {
@@ -14,8 +14,9 @@ module.exports = {
 	},
 	js: {
 		files: [
-			'<%= paths.theme.js %>/*.js',
-			'<%= paths.theme.js %>/lib/*.js'
+			'<%= paths.dev.js %>/*.js',
+			'!<%= paths.dev.js %>/*.min.js',
+			'<%= paths.dev.js %>/lib/*.js'
 		],
 		tasks: [
 			'rigger:main'
@@ -26,7 +27,7 @@ module.exports = {
 	},
 	sass: {
 		files: [
-			'<%= paths.theme.sass %>/*.{sass,scss}'
+			'<%= paths.dev.sass %>/*.{sass,scss}'
 		],
 		tasks: [
 			'newer:sass:main',
@@ -39,7 +40,7 @@ module.exports = {
 	},
 	stylus: {
 		files: [
-			'<%= paths.theme.stylus %>/*.styl'
+			'<%= paths.dev.stylus %>/*.styl'
 		],
 		tasks: [
 			'newer:stylus:main',
@@ -52,7 +53,7 @@ module.exports = {
 	},
 	data: {
 		files: [
-			'<%= paths.theme.data %>/*.*'
+			'<%= paths.dev.data %>/*.*'
 		],
 		tasks: [
 			'async_jade_data:main',
@@ -64,7 +65,7 @@ module.exports = {
 	},
 	jade: {
 		files: [
-			'<%= paths.theme.jade %>/pages/*.jade'
+			'<%= paths.dev.jade %>/pages/*.jade'
 		],
 		tasks: [
 			'newer:jade:main'
@@ -75,8 +76,8 @@ module.exports = {
 	},
 	helpers: {
 		files: [
-			'<%= paths.theme.helpers %>/**/*.*',
-			'<%= paths.theme.helpers %>/.htaccess'
+			'<%= paths.dev.helpers %>/**/*.*',
+			'<%= paths.dev.helpers %>/.htaccess'
 		],
 		tasks: [
 			'sync:helpers'

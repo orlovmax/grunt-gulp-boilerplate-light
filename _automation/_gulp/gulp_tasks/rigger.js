@@ -9,11 +9,11 @@ var gulp = require('gulp'),
 // Concatenate & Minify JS
 gulp.task('rigger:main', function() {
 	return gulp.src([
-		paths.theme.js + '/*.js',
-		'!' + paths.theme.js + '/*.min.js'
+		paths.dev.js + '/*.js',
+		'!' + paths.dev.js + '/*.min.js'
 	])
 		.pipe(plumber())
 		.pipe(rigger())
 		.pipe(rename({suffix: '.min'}))
-		.pipe(gulp.dest(paths.theme.js));
+		.pipe(gulp.dest(paths.build.js));
 });

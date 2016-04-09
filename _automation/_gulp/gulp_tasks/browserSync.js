@@ -6,7 +6,7 @@ var gulp = require('gulp'),
 // Static server
 gulp.task('browserSync:server', function() {
 	browserSync({
-		server: paths.theme.main
+		server: paths.build.main
 	});
 });
 

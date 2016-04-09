@@ -3,9 +3,9 @@ module.exports = {
 	main: {
 		expand: true,
 		flatten: true,
-		cwd: '<%= paths.theme.coffee %>',
+		cwd: '<%= paths.dev.coffee %>',
 		src: ['*.coffee'],
-		dest: '<%= paths.theme.js %>/lib',
+		dest: '<%= paths.dev.js %>/lib',
 		ext: '.coffee.js',
 		extDot: 'last'
 	}

@@ -8,8 +8,8 @@ var gulp = require('gulp'),
 // Minify image files
 gulp.task('sprite:main', function () {
 	return gulp.src([
-		paths.theme.images + '/sprite/*.png',
-		'!' + paths.theme.images + '/sprite/sprite.png'
+		paths.dev.images + '/sprite/*.png',
+		'!' + paths.dev.images + '/sprite/sprite.png'
 	])
 		.pipe(plumber())
 		.pipe(spritesmith({
@@ -19,5 +19,5 @@ gulp.task('sprite:main', function () {
 			algorithmOpts: {sort: false},
 			padding: 1
 		}))
-		.pipe(gulp.dest(paths.theme.images + '/sprite'));
+		.pipe(gulp.dest(paths.dev.images + '/sprite'));
 });

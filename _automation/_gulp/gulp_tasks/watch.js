@@ -7,7 +7,7 @@ var gulp = require('gulp'),
 // Watch Files For Changes
 gulp.task('watch', function() {
 	gulp.watch(
-		paths.theme.coffee + '/*.coffee',
+		paths.dev.coffee + '/*.coffee',
 		function() {
 			runSequence(
 				'coffee:main:changed',
@@ -19,9 +19,9 @@ gulp.task('watch', function() {
 
 	gulp.watch(
 		[
-			paths.theme.js + '/*.js',
-			'!' + paths.theme.js + '/*.min.js',
-			paths.theme.js + '/lib/*.js'
+			paths.dev.js + '/*.js',
+			'!' + paths.dev.js + '/*.min.js',
+			paths.dev.js + '/lib/*.js'
 		],
 		function() {
 			runSequence(
@@ -32,7 +32,7 @@ gulp.task('watch', function() {
 	);
 
 	gulp.watch(
-		paths.theme.sass + '/*.{sass,scss}',
+		paths.dev.sass + '/*.{sass,scss}',
 		function() {
 			runSequence(
 			'sass:main:changed',
@@ -44,11 +44,10 @@ gulp.task('watch', function() {
 	);
 
 	gulp.watch(
-		paths.theme.stylus + '/*.styl',
+		paths.dev.stylus + '/*.styl',
 		function() {
 			runSequence(
 			'stylus:main:changed',
-			'autoprefixer:main',
 			'cmq:main',
 			'browserSync:reload'
 			);
@@ -56,7 +55,7 @@ gulp.task('watch', function() {
 	);
 
 	gulp.watch(
-		paths.theme.data + '/*.*',
+		paths.dev.data + '/*.*',
 		function() {
 			runSequence(
 			'jade:main',
@@ -66,7 +65,7 @@ gulp.task('watch', function() {
 	);
 
 	gulp.watch(
-		paths.theme.jade + '/pages/*.jade',
+		paths.dev.jade + '/pages/*.jade',
 		function() {
 			runSequence(
 			'jade:main:changed',
@@ -77,8 +76,8 @@ gulp.task('watch', function() {
 
 	gulp.watch(
 		[
-			paths.theme.helpers + '/**/*.*',
-			paths.theme.helpers + '/.htaccess'
+			paths.dev.helpers + '/**/*.*',
+			paths.dev.helpers + '/.htaccess'
 		],
 		function() {
 			runSequence(
