@@ -179,7 +179,6 @@ Build task.
 Grunt: `grunt build` Gulp: `gulp build`
 
 * Minify images
-* Apply styleguide to stylesheets
 * Minify javascript files
 * Minify stylesheets
 * Run BrowserSync static server 
@@ -198,7 +197,6 @@ Grunt: `grunt rebuild` Gulp: `gulp rebuild`
 * Compile Jade templates
 * Sync helpers and other assets
 * Minify images
-* Apply styleguide to stylesheets
 * Minify javascript files
 * Minify stylesheets
 * 

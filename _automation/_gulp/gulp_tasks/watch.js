@@ -36,8 +36,7 @@ gulp.task('watch', function() {
 		function() {
 			runSequence(
 			'sass:main:changed',
-			'autoprefixer:main',
-			'cmq:main',
+			'postcss:dev',
 			'browserSync:reload'
 			);
 		}
@@ -48,7 +47,7 @@ gulp.task('watch', function() {
 		function() {
 			runSequence(
 			'stylus:main:changed',
-			'cmq:main',
+			'postcss:dev',
 			'browserSync:reload'
 			);
 		}

@@ -31,8 +31,7 @@ module.exports = {
 		],
 		tasks: [
 			'newer:sass:main',
-			'autoprefixer:main',
-        	'cmq:main'
+			'postcss:dev'
 		],
 		options: {
 			spawn: false
@@ -44,8 +43,7 @@ module.exports = {
 		],
 		tasks: [
 			'newer:stylus:main',
-			'autoprefixer:main',
-        	'cmq:main'
+			'postcss:dev'
 		],
 		options: {
 			spawn: false

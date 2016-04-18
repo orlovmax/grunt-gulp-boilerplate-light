@@ -12,8 +12,7 @@ module.exports = {
 		'rigger:main',
 		'sass:main',
 		'stylus:main',
-		'autoprefixer:main',
-		'cmq:main',
+		'postcss:dev',
 		'async_jade_data:main',
 		'jade:main',
 		'sync:helpers',
@@ -24,9 +23,8 @@ module.exports = {
 	// Build task
 	'build': [
 		'imagemin:main',
-		'csscomb:main',
 		'uglify:main',
-		'csso:main',
+		'postcss:build',
 		'browserSync:test'
 	],
 
@@ -36,15 +34,13 @@ module.exports = {
 		'rigger:main',
 		'sass:main',
 		'stylus:main',
-		'autoprefixer:main',
-		'cmq:main',
+		'postcss:dev',
 		'async_jade_data:main',
 		'jade:main',
 		'sync:helpers',
 		'imagemin:main',
-		'csscomb:main',
 		'uglify:main',
-		'csso:main'
+		'postcss:build'
 	],
 
 	// Run server without watching for changes
