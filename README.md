@@ -3,7 +3,6 @@
 Template with cms adjusted structure, based on [front-end-scaffold](https://github.com/orlovmax/front-end-scaffold), with common used technologies and tools.
 
 ## Contents
-* [Live project examples](live-project-examples)
 * [Folder structure](#folder-and-file-structure)
 * [Requirements](#requirements)
 	- [Editorconfig](#editorconfig)
@@ -18,9 +17,6 @@ Template with cms adjusted structure, based on [front-end-scaffold](https://gith
 	- [Sprite](#sprite)
 * [Live reload](#live-reload)
 * [License](#license)
-
-## Live project examples
-* [ComfortDiscovered](https://github.com/orlovmax/comfort)
 
 ## Folder and file structure
 ```
@@ -65,9 +61,9 @@ Template with cms adjusted structure, based on [front-end-scaffold](https://gith
 		|
 		├── images/                            * image sources
 		|
-		├── jade/                              * templates
+		├── pug/                               * templates
 		|	├── blocks/                        * blocks library
-		│   |   └── block.jade
+		│   |   └── block.pug
 		│   ├── helpers/                       * helper mixins
 		│   ├── vendor/                        * third-party code
 		│   ├── layouts/                       * page layouts
@@ -144,7 +140,7 @@ Also `bower install` included into `start` task using shell plugin. It will inst
 * "html5shiv"
 
 ## Site configuration
-This boilerplate use Jade templates with external data configs. 
+This boilerplate use Pug templates with external data configs. 
 Main settings can be found in `dev/data/config.json` file. And they're available for usage in templates with `config.key-name`
 
 ## Tasks
@@ -168,7 +164,7 @@ Grunt: `grunt dev` Gulp: `gulp dev`
 * Compile Stylus stylesheets
 * Add vendor prefixes in css
 * Combine media queries in css files
-* Compile Jade templates
+* Compile Pug templates
 * Sync helpers and other assets
 * Run BrowserSync static server with live reload using 
 * Watch for changes and run dev task
@@ -194,7 +190,7 @@ Grunt: `grunt rebuild` Gulp: `gulp rebuild`
 * Compile Stylus stylesheets
 * Add vendor prefixes in css
 * Combine media queries in css files
-* Compile Jade templates
+* Compile Pug templates
 * Sync helpers and other assets
 * Minify images
 * Minify javascript files

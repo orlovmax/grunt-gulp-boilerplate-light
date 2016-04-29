@@ -5,6 +5,7 @@ module.exports = {
 		coffee: 'theme/static/coffee',
 		js: 'theme/static/js',
 		jade: 'theme/static/jade',
+		pug: 'theme/static/pug',
 		sass: 'theme/static/sass',
 		stylus: 'theme/static/stylus',
 		images: 'theme/static/images',

@@ -19,7 +19,7 @@ gulp.task('dev', function() {
 		'sass:main',
 		'stylus:main',
 		'postcss:dev',
-		'jade:main',
+		'pug:main',
 		'sync:helpers',
 		'browserSync:server',
 		'watch'
@@ -31,7 +31,7 @@ gulp.task('build', function() {
 	runSequence(
 		'imagemin:main',
 		'uglify:main',
-		'postcss:build'
+		'postcss:build',
 		'browserSync:server'
 	);
 });
@@ -44,7 +44,7 @@ gulp.task('rebuild', function() {
 		'sass:main',
 		'stylus:main',
 		'postcss:dev',
-		'jade:main',
+		'pug:main',
 		'sync:helpers',
 		'imagemin:main',
 		'uglify:main',
