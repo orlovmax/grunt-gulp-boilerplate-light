@@ -74,7 +74,6 @@ Template with cms adjusted structure, based on [front-end-scaffold](https://gith
 		├── js/                                * scripts
 		|   ├── vendor/                        * vendor scripts library
 		|   ├── lib/                           * site scripts library
-		│   ├── ie.js                          * ie compat scripts
 		│   ├── head.js                        * head scripts
 		│   └── body.js                        * vendor scripts
 		|
@@ -83,7 +82,6 @@ Template with cms adjusted structure, based on [front-end-scaffold](https://gith
 		│   |   └── block.sass
 		|   ├── helpers/                       * mixins and vars
 		│   ├── vendor/                        * third-party code
-		|   ├── ie.sass
 		|   ├── custom.sass
 		|   ├── noscript.sass
 		|   └── screen.sass
@@ -93,7 +91,6 @@ Template with cms adjusted structure, based on [front-end-scaffold](https://gith
 		│   |   └── block.styl
 		│   ├── helpers/                       * mixins and vars
 		│   ├── vendor/                        * third-party code
-		│   ├── ie.styl
 		│   ├── custom.styl
 		│   ├── noscript.styl
 		│   └── screen.styl
@@ -136,8 +133,6 @@ Also `bower install` included into `start` task using shell plugin. It will inst
 **bower.json dependencies**
 * "jquery"
 * "modernizr"
-* "respond"
-* "html5shiv"
 
 ## Site configuration
 This boilerplate use Pug templates with external data configs. 
