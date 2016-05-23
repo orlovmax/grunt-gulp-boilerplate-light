@@ -31,7 +31,8 @@ module.exports = {
 		],
 		tasks: [
 			'newer:sass:main',
-			'postcss:dev'
+			'postcss:dev',
+			'cmq:main'
 		],
 		options: {
 			spawn: false
@@ -43,7 +44,8 @@ module.exports = {
 		],
 		tasks: [
 			'newer:stylus:main',
-			'postcss:dev'
+			'postcss:dev',
+			'cmq:main'
 		],
 		options: {
 			spawn: false
