@@ -1,6 +1,4 @@
-# Synteagle cms project template
-
-Template with cms adjusted structure, based on [front-end-scaffold](https://github.com/orlovmax/front-end-scaffold), with common used technologies and tools.
+# ProjectName
 
 ## Contents
 * [Folder structure](#folder-and-file-structure)
@@ -23,32 +21,18 @@ Template with cms adjusted structure, based on [front-end-scaffold](https://gith
 ./
 ├── .editorconfig
 ├── README.md
-├── automation.sh
 |
-├── _automation/                               * build systems
-|	├── _grunt/                                * grunt build system
-|	|	├── grunt_tasks/                       * grunt tasks
-|	|	|   ├── config/                        * grunt tasks config
-|	|	│   |	├── paths.js
-|	|	│   |	├── settings.js
-|	|	│   |	└── aliases.js
-|	|	│   |
-|	|	|   └── task.js
-|	|	│
-|	|	├── Gruntfile.js
-|	|	└── package.json
-|	|
-|	└── _gulp/                                 * gulp build system
-|		├── gulp_tasks/                        * gulp tasks
-|		|   ├── config/                        * gulp tasks config
-|		│   |	├── paths.js
-|		│   |	├── settings.js
-|		│   |	└── aliases.js
-|		│   |
-|		|   └── task.js
-|		│
-|		├── gulpfile.js
-|		└── package.json
+├── _gulp/                                     * gulp build system
+|	├── gulp_tasks/                            * gulp tasks
+|	|   ├── config/                            * gulp tasks config
+|	│   |	├── paths.js
+|	│   |	├── settings.js
+|	│   |	└── aliases.js
+|	│   |
+|	|   └── task.js
+|	│
+|	├── gulpfile.js
+|	└── package.json
 |
 ├── screenshots/                               * responsive test screenshots
 |
@@ -106,22 +90,18 @@ Template with cms adjusted structure, based on [front-end-scaffold](https://gith
 
 ## Requirements:
 - [Node.js](http://nodejs.org/)
-- Build sytem: [Grunt](http://gruntjs.com/) or [Gulp](http://gulpjs.com/)
+- Build sytem: [Gulp](http://gulpjs.com/)
 - Optionally: [Editorconfig](http://editorconfig.org/)
 
 #### Editorconfig
 This project have .editorconfig file at the root that used by your code editor with editorconfig plugin. It describes codestyle like indent style, trailing whitespaces etc. See more details [here](http://editorconfig.org/)
 
 ## How to start
-If you haven't used [Grunt](http://gruntjs.com/) before, be sure to check out the [Getting Started](http://gruntjs.com/getting-started) guide, as it explains how to use [Gruntfile](http://gruntjs.com/sample-gruntfile) as well as install and use Grunt plugins.
-
 If you haven't used [Gulp](http://gulpjs.com/) before, be sure to check out the [Getting Started](https://github.com/gulpjs/gulp/blob/master/docs/README.md) guide, as it explains how to use [Gulp.js](https://github.com/google/web-starter-kit/blob/master/gulpfile.js), also check these [recips](https://github.com/gulpjs/gulp/tree/master/docs/recipes#recipes) 
 
-Before start you need to have installed _npm_ , as well as _grunt_/_gulp_  globally.
+Before start you need to have installed _npm_ , as well as _gulp_ globally.
 
 **A few simple steps to start:**
-* Download these files. You can chose `Download zip` option or clone this repo to your local maschine.
-* Now go to this project folder in terminal. Run `automation.sh` script by typing `bash automation.sh` or `sh automation.sh` and choose build system - it will extract Grunt or Gulp scripts from the `_automation` directory into project folder. Or you can manually copy all necessary files from `_automation/_build-system-name`
 * Install dependencies from `package.json` by running: `npm install`.
 * Run tasks from the list below and start devevelopment!
 * Edit general settings in `dev/data/config.json` See [Site configuration](#site-configuration) section
@@ -131,17 +111,17 @@ This boilerplate uses Pug templates with external data configs.
 Main settings can be found in `dev/data/config.json` file. And they're available for usage in templates with `config.key-name`
 
 ## Tasks
-Here comes groups of grunt and gulp tasks with some explanations
+Here comes groups ofgulp tasks with some explanations
 
 #### Start 
 Remove placeholders from work directories.
-Grunt: `grunt start` Gulp: `gulp start`
+Gulp: `gulp start`
 
 * Remove gitkeep files
 
 #### Dev
 Dev task with static server.
-Grunt: `grunt dev` Gulp: `gulp dev`
+Gulp: `gulp dev`
 
 * Compile coffescripts
 * Concatenate javascripts
@@ -151,23 +131,26 @@ Grunt: `grunt dev` Gulp: `gulp dev`
 * Combine media queries in css files
 * Compile Pug templates
 * Sync helpers and other assets
+* Sync fonts
+* Sync images
 * Run BrowserSync static server with live reload using 
 * Watch for changes and run dev task
 
 
 #### Build 
 Build task.
-Grunt: `grunt build` Gulp: `gulp build`
+Gulp: `gulp build`
 
 * Minify images
 * Minify javascript files
 * Minify stylesheets
+* Minify html
 * Run BrowserSync static server 
 
 
 #### Rebuild 
 Regenerate and build project by running all tasks.
-Grunt: `grunt rebuild` Gulp: `gulp rebuild`
+Gulp: `gulp rebuild`
 
 * Compile coffescripts
 * Concatenate javascripts
@@ -177,32 +160,35 @@ Grunt: `grunt rebuild` Gulp: `gulp rebuild`
 * Combine media queries in css files
 * Compile Pug templates
 * Sync helpers and other assets
+* Sync fonts
+* Sync images
 * Minify images
 * Minify javascript files
 * Minify stylesheets
-* 
+* Minify html
+
 
 #### Server 
 Run server without watching for changes.
-Grunt: `grunt server` Gulp: `gulp server`
+Gulp: `gulp server`
 
 * Run BrowserSync static server
 
 
 #### Sprite 
 Sprite creation task. Should be configured before running.
-Grunt: `grunt sprite:sass` Gulp: `gulp sprite:sass`
+Gulp: `gulp sprite:sass`
 
 * Create images sprite and related sass files
 
 
-Grunt: `grunt sprite:stylus` Gulp: `gulp sprite:stylus`
+Gulp: `gulp sprite:stylus`
 
 * Create images sprite and related stylus files
 
 
-## Live reload  
+## Live reload 
 This project uses BrowserSync as static server with enabled and configured live reload option.
 
 ## License
-[MIT](https://github.com/synteagle/synt-cms-template/blob/master/LICENSE.md)
+[MIT](https://github.com/orlovmax/front-end-scaffold/blob/master/LICENSE.md)
