@@ -1,5 +1,0 @@
-{
-  "name": "synt-cms-template",
-  "description": "CMS adjusted template with block-oriented structure based on Grunt/Gulp task runners",
-  "dependencies": {}
-}
