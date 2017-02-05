@@ -125,6 +125,7 @@ Grunt: `grunt dev`
 
 * Compile coffescripts
 * Concatenate javascripts
+* Compile ES6
 * Compile Sass stylesheets
 * Compile Stylus stylesheets
 * Add vendor prefixes in css
@@ -154,6 +155,7 @@ Grunt: `grunt rebuild`
 
 * Compile coffescripts
 * Concatenate javascripts
+* Compile ES6
 * Compile Sass stylesheets
 * Compile Stylus stylesheets
 * Add vendor prefixes in css
@@ -191,4 +193,4 @@ Grunt: `grunt sprite:stylus`
 This project uses BrowserSync as static server with enabled and configured live reload option.
 
 ## License
-[MIT](https://github.com/orlovmax/front-end-scaffold/blob/master/LICENSE.md)
+[MIT](https://github.com/orlovmax/synt-cms-template/blob/master/LICENSE.md)

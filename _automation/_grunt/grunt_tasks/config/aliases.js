@@ -8,6 +8,7 @@ module.exports = {
 	'dev': [
 		'coffee:main',
 		'rigger:main',
+		'babel:main',
 		'sass:main',
 		'stylus:main',
 		'postcss:dev',
@@ -30,6 +31,7 @@ module.exports = {
 	'rebuild': [
 		'coffee:main',
 		'rigger:main',
+		'babel:main',
 		'sass:main',
 		'stylus:main',
 		'postcss:dev',
