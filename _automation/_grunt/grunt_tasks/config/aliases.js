@@ -7,8 +7,7 @@ module.exports = {
 	// Dev task with static server
 	'dev': [
 		'coffee:main',
-		'rigger:main',
-		'babel:main',
+		'rollup:main',
 		'sass:main',
 		'stylus:main',
 		'postcss:dev',
@@ -30,8 +29,7 @@ module.exports = {
 	// Regenerate and build project by running all tasks
 	'rebuild': [
 		'coffee:main',
-		'rigger:main',
-		'babel:main',
+		'rollup:main',
 		'sass:main',
 		'stylus:main',
 		'postcss:dev',

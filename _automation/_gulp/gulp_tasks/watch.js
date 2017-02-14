@@ -11,8 +11,7 @@ gulp.task('watch', function() {
 		function() {
 			runSequence(
 				'coffee:main:changed',
-				'rigger:main',
-				'babel:main',
+				'rollup:main',
 				'browserSync:reload'
 			);
 		}
@@ -26,8 +25,7 @@ gulp.task('watch', function() {
 		],
 		function() {
 			runSequence(
-			'rigger:main',
-			'babel:main',
+			'rollup:main',
 			'browserSync:reload'
 			);
 		}
