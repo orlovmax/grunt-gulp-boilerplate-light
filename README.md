@@ -74,7 +74,7 @@ Template with cms adjusted structure, based on [front-end-scaffold](https://gith
 		|   ├── vendor/                        * vendor scripts library
 		|   ├── lib/                           * site scripts library
 		│   ├── head.js                        * head scripts
-		│   └── body.js                        * vendor scripts
+		│   └── body.js                        * body scripts
 		|
 		├── sass/                              * sass preprocessor styles
 		|	├── blocks/                        * blocks library
