@@ -26,81 +26,81 @@ Template with cms adjusted structure, based on [front-end-scaffold](https://gith
 ├── automation.sh
 |
 ├── _automation/                               * build systems
-|	├── _grunt/                                * grunt build system
-|	|	├── grunt_tasks/                       * grunt tasks
-|	|	|   ├── config/                        * grunt tasks config
-|	|	│   |	├── paths.js
-|	|	│   |	├── settings.js
-|	|	│   |	└── aliases.js
-|	|	│   |
-|	|	|   └── task.js
-|	|	│
-|	|	├── Gruntfile.js
-|	|	└── package.json
-|	|
-|	└── _gulp/                                 * gulp build system
-|		├── gulp_tasks/                        * gulp tasks
-|		|   ├── config/                        * gulp tasks config
-|		│   |	├── paths.js
-|		│   |	├── settings.js
-|		│   |	└── aliases.js
-|		│   |
-|		|   └── task.js
-|		│
-|		├── gulpfile.js
-|		└── package.json
+|   ├── _grunt/                                * grunt build system
+|   |   ├── grunt_tasks/                       * grunt tasks
+|   |   |   ├── config/                        * grunt tasks config
+|   |   │   |   ├── paths.js
+|   |   │   |   ├── settings.js
+|   |   │   |   └── aliases.js
+|   |   │   |
+|   |   |   └── task.js
+|   |   │
+|   |   ├── Gruntfile.js
+|   |   └── package.json
+|   |
+|   └── _gulp/                                 * gulp build system
+|       ├── gulp_tasks/                        * gulp tasks
+|       |   ├── config/                        * gulp tasks config
+|       │   |   ├── paths.js
+|       │   |   ├── settings.js
+|       │   |   └── aliases.js
+|       │   |
+|       |   └── task.js
+|       │
+|       ├── gulpfile.js
+|       └── package.json
 |
 ├── screenshots/                               * responsive test screenshots
 |
 └── theme/                                     * main theme folder
-	├── index.html
-	├── page.html
-	└── static/                                * static assets
-		├── css/                               * compiled css
-		|
-		├── images/                            * image sources
-		|
-		├── pug/                               * templates
-		|	├── blocks/                        * blocks library
-		│   |   └── block.pug
-		│   ├── helpers/                       * helper mixins
-		│   ├── vendor/                        * third-party code
-		│   ├── layouts/                       * page layouts
-		│   └── pages/                         * main pages templates
-		|
-		├── coffee/                            * coffeescripts
-		|
-		├── js/                                * scripts
-		|   ├── vendor/                        * vendor scripts library
-		|   ├── lib/                           * site scripts library
-		│   ├── head.js                        * head scripts
-		│   └── body.js                        * body scripts
-		|
-		├── sass/                              * sass preprocessor styles
-		|	├── blocks/                        * blocks library
-		│   |   └── block.sass
-		|   ├── helpers/                       * mixins and vars
-		│   ├── vendor/                        * third-party code
-		|   ├── custom.sass
-		|   ├── noscript.sass
-		|   └── screen.sass
-		|
-		├── stylus/                            * stylus preprocessor styles
-		|	├── blocks/                        * blocks library
-		│   |   └── block.styl
-		│   ├── helpers/                       * mixins and vars
-		│   ├── vendor/                        * third-party code
-		│   ├── custom.styl
-		│   ├── noscript.styl
-		│   └── screen.styl
-		|
-		├── helpers/                           * additional resources
-		|	├── favicon.ico
-		|	└── .htaccess
-		|
-		├── fonts/                             * font sources
-		|
-		└── data/                              * configs and data for templates
+    ├── index.html
+    ├── page.html
+    └── static/                                * static assets
+        ├── css/                               * compiled css
+        |
+        ├── images/                            * image sources
+        |
+        ├── pug/                               * templates
+        |   ├── blocks/                        * blocks library
+        │   |   └── block.pug
+        │   ├── helpers/                       * helper mixins
+        │   ├── vendor/                        * third-party code
+        │   ├── layouts/                       * page layouts
+        │   └── pages/                         * main pages templates
+        |
+        ├── coffee/                            * coffeescripts
+        |
+        ├── js/                                * scripts
+        |   ├── vendor/                        * vendor scripts library
+        |   ├── lib/                           * site scripts library
+        │   ├── head.js                        * head scripts
+        │   └── body.js                        * body scripts
+        |
+        ├── sass/                              * sass preprocessor styles
+        |   ├── blocks/                        * blocks library
+        │   |   └── block.sass
+        |   ├── helpers/                       * mixins and vars
+        │   ├── vendor/                        * third-party code
+        |   ├── custom.sass
+        |   ├── noscript.sass
+        |   └── screen.sass
+        |
+        ├── stylus/                            * stylus preprocessor styles
+        |   ├── blocks/                        * blocks library
+        │   |   └── block.styl
+        │   ├── helpers/                       * mixins and vars
+        │   ├── vendor/                        * third-party code
+        │   ├── custom.styl
+        │   ├── noscript.styl
+        │   └── screen.styl
+        |
+        ├── helpers/                           * additional resources
+        |   ├── favicon.ico
+        |   └── .htaccess
+        |
+        ├── fonts/                             * font sources
+        |
+        └── data/                              * configs and data for templates
 
 ```
 
