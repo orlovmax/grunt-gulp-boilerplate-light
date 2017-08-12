@@ -205,4 +205,4 @@ Grunt: `grunt sprite:stylus` Gulp: `gulp sprite:stylus`
 This project uses BrowserSync as static server with enabled and configured live reload option.
 
 ## License
-[MIT](https://github.com/synteagle/synt-cms-template/blob/master/LICENSE.md)
+[MIT](https://github.com/synteagle/se-cms-template/blob/master/LICENSE.md)

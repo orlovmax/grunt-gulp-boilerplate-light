@@ -1,5 +1,5 @@
 {
-  "name": "synt-cms-template",
+  "name": "se-cms-template",
   "description": "CMS adjusted template with block-oriented structure based on Grunt/Gulp task runners",
   "devDependencies": {
     "autoprefixer": "^6.5.0",

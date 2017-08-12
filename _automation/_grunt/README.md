@@ -191,4 +191,4 @@ Grunt: `grunt sprite:stylus`
 This project uses BrowserSync as static server with enabled and configured live reload option.
 
 ## License
-[MIT](https://github.com/orlovmax/synt-cms-template/blob/master/LICENSE.md)
+[MIT](https://github.com/orlovmax/se-cms-template/blob/master/LICENSE.md)
