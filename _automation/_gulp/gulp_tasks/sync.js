@@ -1,6 +1,7 @@
 // Copy assets
 var gulp = require('gulp'),
-	paths = require('./config/paths');
+	paths = require('./config/paths'),
+	plumber = require('gulp-plumber');
 
 
 gulp.task('sync:helpers', function() {
@@ -8,6 +9,7 @@ gulp.task('sync:helpers', function() {
 		paths.dev.helpers + '/**/',
 		paths.dev.helpers + '/.htaccess'
 	], {base: paths.dev.helpers})
+		.pipe(plumber())
 		.pipe(gulp.dest(paths.build.main));
 });
 
@@ -17,5 +19,6 @@ gulp.task('sync:helpers:changed', function() {
 		paths.dev.helpers + '/**/',
 		paths.dev.helpers + '/.htaccess'
 	], {base: paths.dev.helpers})
+		.pipe(plumber())
 		.pipe(gulp.dest(paths.build.main));
 });
