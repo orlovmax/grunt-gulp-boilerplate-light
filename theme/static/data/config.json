@@ -1,10 +1,10 @@
 {
     "site": {
         "lang": "en",
-        "title": "Synteagle cms project template",
+        "title": "CMS Frontend Boilerplate",
         "titleDelim": " | ",
-        "description": "CMS adjusted template with block-oriented structure based on Grunt/Gulp task runners",
-        "keywords": "Front-end template, project template, boilerplate, web starter kit",
+        "description": "Grunt/Gulp, Babel, Rollup, Pug, Sass, Stylus, Imagemin, Autoprefixer, PostCSS",
+        "keywords": "Frontend template, project template, boilerplate, web starter kit",
         "url": "===site-full-url==="
     },
     "modules": {

@@ -2,7 +2,6 @@ module.exports = {
     // Dev paths
     dev: {
         main: 'theme',
-        coffee: 'theme/static/coffee',
         js: 'theme/static/js',
         jade: 'theme/static/jade',
         pug: 'theme/static/pug',
