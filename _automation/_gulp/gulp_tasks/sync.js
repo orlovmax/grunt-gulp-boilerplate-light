@@ -5,20 +5,20 @@ var gulp = require('gulp'),
 
 
 gulp.task('sync:helpers', function() {
-    return gulp.src([
-        paths.dev.helpers + '/**/',
-        paths.dev.helpers + '/.htaccess'
-    ], {base: paths.dev.helpers})
-        .pipe(plumber())
-        .pipe(gulp.dest(paths.build.main));
+  return gulp.src([
+    paths.dev.helpers + '/**/',
+    paths.dev.helpers + '/.htaccess'
+  ], {base: paths.dev.helpers})
+    .pipe(plumber())
+    .pipe(gulp.dest(paths.build.main));
 });
 
 
 gulp.task('sync:helpers:changed', function() {
-    gulp.src([
-        paths.dev.helpers + '/**/',
-        paths.dev.helpers + '/.htaccess'
-    ], {base: paths.dev.helpers})
-        .pipe(plumber())
-        .pipe(gulp.dest(paths.build.main));
+  gulp.src([
+    paths.dev.helpers + '/**/',
+    paths.dev.helpers + '/.htaccess'
+  ], {base: paths.dev.helpers})
+    .pipe(plumber())
+    .pipe(gulp.dest(paths.build.main));
 });
