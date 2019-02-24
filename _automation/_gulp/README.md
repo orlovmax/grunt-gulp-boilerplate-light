@@ -22,18 +22,16 @@
 ```
 ./
 ├── .editorconfig
+├── gulpfile.js
+├── package.json
 ├── README.md
 |
 ├── gulp_tasks/                                * gulp tasks
 |   ├── config/                                * gulp tasks config
 │   |   ├── paths.js
-│   |   ├── settings.js
 │   |   └── aliases.js
 │   |
 |   └── task.js
-│
-├── gulpfile.js
-├── package.json
 |
 ├── screenshots/                               * responsive test screenshots
 |
