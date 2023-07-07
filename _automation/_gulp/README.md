@@ -199,4 +199,4 @@ This project uses BrowserSync as static server with enabled and configured live 
 
 ## License
 
-[MIT](https://github.com/orlovmax/cms-frontend-boilerplate/blob/master/LICENSE.md)
+[MIT](https://github.com/orlovmax/grunt-gulp-boilerplate-light/blob/master/LICENSE.md)

@@ -1,4 +1,4 @@
-# CMS Frontend Boilerplate
+# Grunt / Gulp Boilerplate (simplified) - ARCHIVED
 
 Grunt/Gulp, Babel, Rollup, Pug, Sass, Stylus, Imagemin, Autoprefixer, PostCSS
 
@@ -218,4 +218,4 @@ This project uses BrowserSync as static server with enabled and configured live 
 
 ## License
 
-[MIT](https://github.com/orlovmax/cms-frontend-boilerplate/blob/master/LICENSE.md)
+[MIT](https://github.com/orlovmax/grunt-gulp-boilerplate-light/blob/master/LICENSE.md)

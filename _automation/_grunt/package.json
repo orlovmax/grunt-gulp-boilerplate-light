@@ -1,5 +1,5 @@
 {
-  "name": "cms-frontend-boilerplate",
+  "name": "grunt-gulp-boilerplate-light",
   "description": "Project template based on Grunt task runner",
   "devDependencies": {
     "@babel/core": "^7.3.3",

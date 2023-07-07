@@ -4,7 +4,7 @@
     "title": "CMS Frontend Boilerplate",
     "titleDelim": " | ",
     "description": "Grunt/Gulp, Babel, Rollup, Pug, Sass, Stylus, Imagemin, Autoprefixer, PostCSS",
-    "keywords": "Frontend template, project template, boilerplate, web starter kit",
+    "keywords": "Frontend template, project template, boilerplate, web boilerplate kit",
     "url": "===site-full-url==="
   },
   "modules": {
